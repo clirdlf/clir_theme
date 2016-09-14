@@ -53,6 +53,8 @@ http://staging.registry.hiddencollections.clir.org/)
     DLF-ANNOUNCE, etc)
   - Social Media
 - Search site, and across network
+- Templates should include layouts that are compatible with page-builder
+  plugins (e.g. Page Builder by Site Origin)
 
 ## Internationalization
 
@@ -80,4 +82,9 @@ Websites hosted in the Wordpress system will have SSL certificates and
 redirect all traffic to go over a secure connection. Sites will be
 tested at [Qualsys SSL Labs](https://www.ssllabs.com) to ensure the
 server has been configured properly.
+
+## Licence
+
+This theme(s) will be licensed under GPLv3 to remain compatible with the
+primary Wordpress platform.
 
