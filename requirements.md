@@ -27,6 +27,20 @@ Subdomains:
 - publications.clir.org?
 - connect.clir.org for buddypress
 
+# Search
+
+A search solution for both individual sites as well as a global search
+across the network (with i18n support) needs to be in place. Some
+potential solutins include:
+
+- https://wordpress.org/plugins/relevanssi (premium $80 / year)
+- https://searchwp.com/ (need to check what kind of license, $49 - $249/
+  year)
+- https://wordpress.org/plugins/google-custom-search/ (Google Custom
+  Search is $100/year)
+- https://rudrastyh.com/plugins/get-posts-from-all-blogs-in-multisite-network ($29)
+- https://rudrastyh.com/wordpress/search-across-wp-multisite.html - free
+
 # Layout
 
 All sites should have a common grid-based layout that works with mobile
