@@ -1,0 +1,26 @@
+{
+  "name": "clir_theme",
+  "description": "Wordpress theme framework for CLIR + DLF websites",
+  "main": "sass/main.scss",
+  "authors": [
+    "Wayne Graham"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "wordpress",
+    "theme",
+    "framework",
+    "bootstrap",
+    "underscores"
+  ],
+  "homepage": "https://github.com/waynegraham/clir_theme",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_source": "https://github.com/waynegraham/clir_theme.git",
+  "_originalSource": "understrap"
+}

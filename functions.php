@@ -45,6 +45,7 @@ function clir_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'clir' ),
+		'secondary' => esc_html__( 'Footer Menu', 'clir'),
 	) );
 
 	/*
@@ -58,6 +59,27 @@ function clir_setup() {
 		'gallery',
 		'caption',
 	) );
+
+	/*
+	 * Enable support for custom logo
+	 */
+	 add_theme_support( 'custom-logo', array(
+		 'height'     => 45,
+		 'width'      => 250,
+		 'flex-width' => true,
+	 ));
+
+	 // Enable custom backgrounds
+	 add_theme_support( 'custom-background', apply_filters( 'clir_custom_background_args', array(
+		 'default-color' => '#ffffff',
+		 'default-image' => '',
+	 ) ));
+
+	 // Enable custom header
+	 add_theme_support( 'custom-header', array(
+		 'default-color' => '#ffffff',
+		 'default-image' => ''
+	 ));
 
 	/*
 	 * Enable support for Post Formats.
@@ -76,6 +98,8 @@ function clir_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+	add_editor_style();
 }
 endif;
 add_action( 'after_setup_theme', 'clir_setup' );
@@ -116,7 +140,10 @@ add_action( 'widgets_init', 'clir_widgets_init' );
 function clir_scripts() {
 	wp_enqueue_style( 'clir-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'clir-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+  wp_enqueue_script( 'clir-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+
+  wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/c1ca2c16bc.js' );
+  wp_enqueue_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' );
 
 	wp_enqueue_script( 'clir-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
@@ -150,3 +177,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Register custom navigation walker
+ */
+require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';

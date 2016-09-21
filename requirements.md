@@ -102,3 +102,48 @@ server has been configured properly.
 This theme(s) will be licensed under GPLv3 to remain compatible with the
 primary Wordpress platform.
 
+# Notes
+
+Plugins:
+
+- For CLIRNews signups https://wordpress.org/plugins/emma-emarketing-plugin/
+- For DLF, need to look at getting the subscription code to
+  lists.clir.org/cgi-bin/wa?SUBED1=DLF-ANNOUNCE
+
+## Custom Post Types
+
+CLIR Reports
+
+- Sequential Publication ID (e.g. 173)
+- Title
+- Date published (M YYYY)
+- Pages
+- Price (default 0)
+- Author(s)
+- PDF link
+- Description
+- ISSN
+- Copyright (or all cc-by)
+
+Some reports are
+
+CLIR Issues
+
+- Convert to posts?
+- TOC? - https://wordpress.org/plugins/table-of-contents-plus/
+
+Annual Report
+
+Needs an Archive; goes back to 1988
+
+- Title
+- PDF
+- Thumbnail
+- Introduction
+- HTML text (used in reports 1998 - 2002)
+
+## v1.5 features
+
+- json-ld (https://premium.wpmudev.org/blog/schema-wordpress-seo/)
+- Cloudflare
+
