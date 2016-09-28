@@ -1,21 +1,14 @@
 /*
-Theme Name: clir
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
-Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: clir
-Tags:
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
-clir is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-*/
+ * Theme Name: CLIR+DLF Theme
+ * Theme URI: https://github.com/clirdlf/clir_theme
+ * Description: Child of Alchem Pro theme with CLIR+DLF customizations
+ * Author: Wayne Graham
+ * Author URI: https://www.clir.org
+ * Template: alchem-pro
+ * Version: 0.0.1
+ * Text Domain: clir
+ * Github Theme URI: https://github.com/clirdlf/clir_theme
+ * Github Branch: master
+ */
 
 @import url('stylesheets/main.css');
