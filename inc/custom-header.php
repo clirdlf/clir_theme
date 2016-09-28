@@ -28,6 +28,8 @@ function clir_custom_header_setup() {
 		'height'                 => 250,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'clir_header_style',
+		'admin-head-callback'    => 'clir_admin_header_style',
+		'admin-preview-callback' => 'clir_admin_header_image'
 	) ) );
 }
 add_action( 'after_setup_theme', 'clir_custom_header_setup' );
@@ -73,4 +75,54 @@ function clir_header_style() {
 	</style>
 	<?php
 }
+endif;
+
+if (! function_exists( 'clir_admin_header_style' ) ):
+/**
+ * Styles the header image displayed on the Appearence > Header admin panel
+ *
+ * @see clir_custom_header_setup
+ */
+ function clir_admin_header_style()
+ {
+	 ?>
+	 	<style type='text/css'>
+		.appearance_page_custom-header #headimg {
+			border: none;
+			}
+			#headimg h1,
+			#desc {
+			}
+			#headimg h1 {
+			}
+			#headimg h1 a {
+			}
+			#desc {
+			}
+			#headimg img {
+			}
+		</style>
+	 <?php
+ }
+endif; //clir_admin_header_style
+
+if (! function_exists( 'clir_admin_header_image') ):
+/**
+ * Custom header image markup displayed on the Appearence > Header admin panel
+ *
+ * @see clir_custom_header_setup().
+ */
+ function clir_admin_header_image(){
+	 ?>
+	 <div id="headimg">
+		<h1 class="displaying-header-text">
+			<a id="name" style="<?php echo esc_attr( 'color: #' . get_header_textcolor() ); ?>" onclick="return false;" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+		</h1>
+		<div class="displaying-header-text" id="desc" style="<?php echo esc_attr( 'color: #' . get_header_textcolor() ); ?>"><?php bloginfo( 'description' ); ?></div>
+		<?php if ( get_header_image() ) : ?>
+		<img src="<?php header_image(); ?>" alt="">
+		<?php endif; ?>
+	</div>
+	 <?php
+ }
 endif;

@@ -126,11 +126,23 @@ function clir_widgets_init() {
 		'name'          => esc_html__( 'Sidebar', 'clir' ),
 		'id'            => 'sidebar-1',
 		'description'   => esc_html__( 'Add widgets here.', 'clir' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+  ) );
+
+  register_sidebar(
+    array(
+      'name'          => esc_html__('Footer About', 'clir' ),
+      'id'            => 'footer-about',
+      'description'   => __('Footer About Text Widget', 'clir'),
+      'before_widget' => '<div class="col-md-3 col-sm-6">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h3 class="widget-title">',
+      'after_title'   => '</h3>'
+    )
+  );
 }
 add_action( 'widgets_init', 'clir_widgets_init' );
 
@@ -144,6 +156,7 @@ function clir_scripts() {
 
   wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/c1ca2c16bc.js' );
   wp_enqueue_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' );
+  // TODO: fonts ffrom Google
 
 	wp_enqueue_script( 'clir-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
@@ -152,6 +165,13 @@ function clir_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'clir_scripts' );
+
+function clir_filter_front_page_template( $template )
+{
+  return is_home() ? '' : $template;
+}
+
+add_filter( 'front_page_template', 'clir_filter_front_page_template' );
 
 /**
  * Implement the Custom Header feature.

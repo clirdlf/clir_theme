@@ -8,6 +8,7 @@ var basePaths = {
 // browser-sync watch files
 // Automatically reloads page when files are changed
 var browserSyncWatchFiles = [
+  './style.css',
   './css/*.min.css',
   './js/*.min.js',
   './**/*.{png,jpg,gif}',

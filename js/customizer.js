@@ -8,6 +8,9 @@
 
 ( function( $ ) {
 
+  // TODO: this isn't getting appended correctly
+  $('#customize-theme-controls > ul').append('<li id="accordion-section-documentation" class="accordion-section control-section control-section-alchem-documentation" style="display: list-item;padding: 10px 10px 20px;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;background: #fff;"><a href="https://clirdlf.github.io/clir_theme" target="_blank" class="">'+clir_params.btn_documentation+'</a></li>');
+
 	// Site title and description.
 	wp.customize( 'blogname', function( value ) {
 		value.bind( function( to ) {
@@ -38,5 +41,8 @@
 				} );
 			}
 		} );
-	} );
+  } );
+
+  // Documentation
+
 } )( jQuery );

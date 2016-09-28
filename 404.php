@@ -7,6 +7,9 @@
  * @package clir
  */
 
+
+if( !isset($class) ) { $class = ''; }
+
 get_header(); ?>
 
 <section class="page-header">
