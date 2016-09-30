@@ -1,0 +1,3 @@
+<?php
+
+// Archives for pubs

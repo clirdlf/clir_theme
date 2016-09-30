@@ -1,2 +1,32 @@
 //Theme customizations
+$clir-burgundy: #991B45;
+$dlf-blue:      #046BA5;
+$ndsa-blue:     #0165AE;
+$hc-blue:       darken($dlf-blue, 15%);
 
+$slider_height: 500px;
+
+.clir-color { color: $clir-burgundy; }
+.clir-font  { font-family: 'A028', serif; }
+
+.dlf-font   { font-family: 'Crimson Text', serif; }
+.dlf-color  { color: $dlf-blue; }
+
+.ndsa-font  { font-family: 'Open Sans', sans-serif; }
+.ndsa-color { color: $ndsa-blue; }
+
+.hidden-collections-color { color: $hc-blue; }
+.hidden-collections-font  {font-family: 'A028', serif; }
+
+
+.logo {
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
+ .alchem-home-section-0 .magee-section{
+    height: $slider_height !important;
+    min-height: $slider_height !important;
+
+  }
