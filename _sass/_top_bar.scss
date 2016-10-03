@@ -1,0 +1,22 @@
+@import 'vars';
+
+.top-bar {
+  .bigger { font-size: 22px; }
+
+  li {
+    &:last-child {
+      border-right: 1px solid;
+    }
+  }
+}
+
+// nav.clir-custom-menu {
+//   .bigger { font-size: 22px; }
+//
+//   li {
+//     .menu-item-object-custom {
+//       padding-left: 45px;
+//
+//   }
+//
+// }

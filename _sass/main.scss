@@ -1,10 +1,5 @@
 //Theme customizations
-$clir-burgundy: #991B45;
-$dlf-blue:      #046BA5;
-$ndsa-blue:     #0165AE;
-$hc-blue:       darken($dlf-blue, 15%);
-
-$slider_height: 500px;
+@import 'vars';
 
 .clir-color { color: $clir-burgundy; }
 .clir-font  { font-family: 'A028', serif; }
@@ -17,7 +12,6 @@ $slider_height: 500px;
 
 .hidden-collections-color { color: $hc-blue; }
 .hidden-collections-font  {font-family: 'A028', serif; }
-
 
 .logo {
   font-size: 22px;
