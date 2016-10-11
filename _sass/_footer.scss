@@ -1,0 +1,60 @@
+@import 'vars'; //social media colors
+
+.twitter {
+    color: $twitter-blue;
+}
+
+.linkedin {
+    color: $linkedin-blue;
+}
+
+.rss {
+    color: $rss-orange;
+}
+
+.envelope {
+    color: $envelope-red;
+}
+
+footer {
+    color: #333;
+
+    .widget-box {
+        font-size: 14px;
+    }
+
+    .footer-widget-area {
+        .widget-title {
+            font-weight: bold;
+            color: #333;
+        }
+    }
+
+    .footer-info-area {
+        .site-info {
+            border-top: 1px solid rgba(151, 160, 175, 0.2);
+            margin-top: 30px;
+            padding-top: 20px;
+        }
+
+        .pull-right {
+            // TODO: check on mobile breakpoints
+            margin-top: 12px;
+        }
+
+        .logo {
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .footer-widget-area {
+        font-size: 14px;
+        background-color: $footer-background-color;
+    }
+
+    a {
+        color: #97a0af;
+    }
+}
