@@ -10,6 +10,7 @@ function enqueue_parent_styles() {
   // https://clirdlf.github.io/logo-fonts/style.css.min
   wp_enqueue_style( 'clir-logo-fonts', 'https://rawgit.com/clirdlf/logo-fonts/master/style.min.css');
   wp_enqueue_style( 'clir-fonts', 'https://rawgit.com/clirdlf/logo-fonts/master/clir-font/stylesheet.min.css');
+  //wp_enqueue_style( 'font-awesome-animation', get_stylesheet_directory_uri() . '/stylesheets/vendor/font-awesome-animation.min.css' );
   // Production CDN
   //wp_enqueue_style( 'clir-fonts', 'https://cdn.rawgit.com/clirdlf/logo-fonts/master/clir-font/stylesheet.min.css');
 }

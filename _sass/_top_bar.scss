@@ -1,22 +1,35 @@
 @import 'vars';
 
-.top-bar {
-  .bigger { font-size: 22px; }
-
-  li {
-    &:last-child {
-      border-right: 1px solid;
-    }
-  }
+.bigger {
+    font-size: 24px;
 }
 
-// nav.clir-custom-menu {
-//   .bigger { font-size: 22px; }
-//
-//   li {
-//     .menu-item-object-custom {
-//       padding-left: 45px;
-//
-//   }
-//
-// }
+.top-bar {
+    height: $top-bar-height;
+    font-family: 'Open Sans Pro', 'Open Sans', sans-serif;
+
+    ul {
+        li {
+            height: $top-bar-height;
+            padding-top: 6px;
+
+            &.menu-item-object-custom {
+                &:not(:first-child) {
+                    padding-left: 10px;
+                    margin-left: 10px;
+                }
+
+                &:last-child {
+                    border-right: 1px solid rgba(255,255,255,.5);
+                }
+            }
+        }
+
+        .clir-programs-menu {
+            // border-radius: 0; // does this help?
+            a {
+                color: #333;
+            }
+        }
+    }
+}
