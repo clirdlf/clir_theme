@@ -72,7 +72,7 @@ case 'right':
               <li class="menu-item menu-item-type-custom menu-item-object-custom">
                 <a href="https://publications.clir.org"><span>Publications</span></a>
               </li>
-              <li class="menu-item menu-item-type-custom menu-item-object-custom">
+              <li class="hidden-xs menu-item menu-item-type-custom menu-item-object-custom">
                 <a href="https://www.clir.org/join">Join</a>
               </li>
               <li class="menu-item menu-item-type-custom menu-item-object-custom">
