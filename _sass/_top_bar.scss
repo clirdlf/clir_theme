@@ -8,10 +8,19 @@
     height: $top-bar-height;
     font-family: 'Open Sans Pro', 'Open Sans', sans-serif;
 
+    a:hover {
+        i {
+            text-decoration: none;
+            display: inline-block;
+        }
+    }
+
     ul {
         li {
             height: $top-bar-height;
             padding-top: 6px;
+
+
 
             &.menu-item-object-custom {
                 &:not(:first-child) {

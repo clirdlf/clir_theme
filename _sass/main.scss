@@ -43,6 +43,13 @@
     font-size: 22px;
     letter-spacing: 1px;
     margin-bottom: 0;
+
+    a:hover {
+        i {
+            text-decoration: none;
+            display: inline-block;
+        }
+    }
 }
 
 .alchem-home-section-0 .magee-section {
