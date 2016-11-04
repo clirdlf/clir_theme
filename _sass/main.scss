@@ -3,6 +3,9 @@
 @import 'top_bar';
 @import 'footer';
 
+@import 'clir'; // clir specific customizations
+@import 'dlf'; // dlf specific customizations
+
 // TODO: no hover underline for logo-fonts
 
 .clir-color {

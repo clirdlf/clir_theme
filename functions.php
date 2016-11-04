@@ -14,9 +14,3 @@ function enqueue_parent_styles() {
   // Production CDN
   //wp_enqueue_style( 'clir-fonts', 'https://cdn.rawgit.com/clirdlf/logo-fonts/master/clir-font/stylesheet.min.css');
 }
-
-
-
-
-
-
