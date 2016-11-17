@@ -50,7 +50,18 @@
               <?php the_content(); ?>
             </div>
             <div class="col-md-4">
-              <?php echo wp_get_attachment_image($customFields['pdf'][0], 'medium'); ?>
+<?php
+  // TODO: refactor in to method
+                    $pdf_id = $customFields['pdf'][0];
+
+
+                  if($pdf_id && get_post_mime_type ($pdf_id) === 'application/pdf') {
+                    $pdf = get_post($pdf_id);
+                    $pdf_link = wp_get_attachment_url($pdf_id);
+                    $image_link = wp_get_attachment_image($customFields['pdf'][0], 'medium');
+                    echo '<a class="link-to-pdf" href="'. $pdf_link.'" title="'.esc_html(the_title).'" target="_blank">'.$image_link.'</a>';
+                  }
+              ?>
             </div>
           </div>
 
