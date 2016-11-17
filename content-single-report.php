@@ -34,6 +34,7 @@
         <?php endif; ?>
         <ul class="entry-meta">
           <li class="entry-date"><i class="fa fa-calendar"></i><?php echo $customFields['date'][0]; ?></li>
+          <li class="entry-pagecount"><i class="fa fa-file"></i><?php echo $customFields['page_count'][0] ?> pages</li>
         </ul>
         <!-- <?php if ($display_meta_data == '1'):?>
           <?php alchem_posted_on(); ?>
