@@ -1,3 +1,5 @@
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro';
+
 //Theme customizations
 @import 'vars';
 @import 'top_bar';
@@ -5,6 +7,31 @@
 
 @import 'clir'; // clir specific customizations
 @import 'dlf'; // dlf specific customizations
+
+.scrollToTop {
+  background: url("img/bottom-top-arrow.png") no-repeat scroll 13px 12px #ffffff;
+  border: 3px solid #f0f1f3;
+  border-radius: 5px;
+  bottom: 20px;
+  display: inline-block;
+  height: 54px;
+  opacity: 0;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  width: 54px;
+  z-index: 100;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+
+  &:hover {
+    background-position: 13px -50px;
+    text-decoration: none;
+    outline: none;
+    background-color: #c0c0c0;
+  }
+}
 
 // TODO: no hover underline for logo-fonts
 

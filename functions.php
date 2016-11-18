@@ -1,6 +1,7 @@
 <?php
 
 add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
+add_action( 'wp_enqueue_scripts', 'add' );
 
 function enqueue_parent_styles() {
   wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
@@ -13,4 +14,9 @@ function enqueue_parent_styles() {
   //wp_enqueue_style( 'font-awesome-animation', get_stylesheet_directory_uri() . '/stylesheets/vendor/font-awesome-animation.min.css' );
   // Production CDN
   //wp_enqueue_style( 'clir-fonts', 'https://cdn.rawgit.com/clirdlf/logo-fonts/master/clir-font/stylesheet.min.css');
+
+  // custom scripts - be sure to compile this with Gulp task
+  // wp_enqueue_script('clir', get_template_directory_uri() . '/js/scripts.js', array('jquery'), 1.0, true);
+  wp_enqueue_script('scripts', get_stylesheet_directory_uri() . '/js/scripts.js', array('jquery'));
+
 }
