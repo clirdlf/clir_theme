@@ -137,7 +137,7 @@ if ($logo_retina):
 if (is_numeric(alchem_option('retina_logo_width')) && is_numeric(alchem_option('retina_logo_height'))):
   $pixels = 'px';
 endif; ?>
-          <img src="<?php echo esc_url($logo_retina); ?>" alt="<?php bloginfo('name'); ?>" style="width:<?php echo esc_attr(alchem_option('retina_logo_width')).$pixels; ?>;max-height:<?php echo esc_attr(alchem_option('retina_logo_height')).$pixels; ?>; " class="site-logo retina_logo" />
+          <img src="<?php echo esc_url($logo_retina); ?>" alt="<?php bloginfo('name'); ?>" class="site-logo retina_logo" />
           <?php endif; ?>
                      </a>
                         <div class="name-box">
@@ -174,7 +174,7 @@ if ($sticky_logo_retina):
 if (is_numeric(alchem_option('sticky_logo_width_for_retina_logo')) && is_numeric(alchem_option('sticky_logo_height_for_retina_logo'))):
   $pixels = 'px';
 endif; ?>
-          <img src="<?php echo $sticky_logo_retina; ?>" alt="<?php bloginfo('name'); ?>" style="width:<?php echo alchem_option('sticky_logo_width_for_retina_logo').$pixels; ?>;max-height:<?php echo alchem_option('sticky_logo_height_for_retina_logo').$pixels; ?>; " class="site-logo retina_logo" />
+          <img src="<?php echo $sticky_logo_retina; ?>" alt="<?php bloginfo('name'); ?>" class="site-logo retina_logo" />
           <?php endif; ?>
                      </a>
                         <div class="name-box">

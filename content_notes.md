@@ -45,7 +45,7 @@ Menu items just go to DLF content (so there aren't multiple versions)
 
 <div id="articleHeader"></div>
 
-anything with a `style=""` (e.g. ` style="[^\"]*"`)
+anything with a `style=""` (e.g. `]*"`)
 
 remove ` target="_blank"`
 
@@ -73,5 +73,5 @@ Also need a map of these for 302 redirects...
 
 Uses shortcodes:
 
-`[one_half]` and `[one_half_last]` to `[ms_column style="1/2" align="left" class="" id=""]`
+`[one_half]` and `[one_half_last]` to `[ms_column align="left" class="" id=""]`
 `[/one_half]` and `[/one_half_last]` to `[ms_column]`
