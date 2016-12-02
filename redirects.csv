@@ -277,7 +277,7 @@ http://www.clir.org/fellowships/postdoc/applicants/smith-college,,,This redirect
 http://www.clir.org/fellowships/postdoc/applicants/st-lawrence2015,,,This redirects to a Connect group? 
 http://www.clir.org/fellowships/postdoc/applicants/swarthmore_upa2015,,,This redirects to a Connect group? 
 http://www.clir.org/fellowships/postdoc/applicants/temple-university-libraries,/postdoc/applicants/temple2015,x,
-http://www.clir.org/fellowships/postdoc/applicants/temple2015,,x,This and the previous are the sameÄ
+http://www.clir.org/fellowships/postdoc/applicants/temple2015,,x,This and the previous are the same€
 http://www.clir.org/fellowships/postdoc/applicants/u-miami,,,This redirects to a Connect group? 
 http://www.clir.org/fellowships/postdoc/applicants/u-s-agency-for-international-development,,x,
 http://www.clir.org/fellowships/postdoc/applicants/ucberkeley_dcs2015,,x,
@@ -355,7 +355,7 @@ http://www.clir.org/hiddencollections/awards/for-2013,,x,
 http://www.clir.org/hiddencollections/awards/for-2014,,x,
 http://www.clir.org/hiddencollections/awards/for-2015,,x,
 http://www.clir.org/hiddencollections/meetings/2010HCsymposium.html,/hidden-collections/2010hcsymposium,x,
-http://www.clir.org/hiddencollections/meetings/symposium/symposium20100329_gallery.html,,,Does this need to migrate? /hiddencollections/meetings is an orphan directory
+http://www.clir.org/hiddencollections/meetings/symposium/symposium20100329_gallery.html,/hiddencollections/2010hcsymposium/symposium20100329_gallery/,x,Does this need to migrate? /hiddencollections/meetings is an orphan directory
 http://www.clir.org/hiddencollections/program-proposals/2008HiddenCollectionsProposal.pdf,/wp-content/uploads/2008HiddenCollectionsProposal.pdf,x,
 http://www.clir.org/hiddencollections/program-proposals/2015-digitizing-hidden-collections-proposal-pdf,/wp-content/uploads/2015HCProposal_20150204.pdf,x,
 http://www.clir.org/hiddencollections/recipients,,x,
@@ -395,29 +395,29 @@ http://www.clir.org/hiddencollections/registry/hc.1091,,,
 http://www.clir.org/hiddencollections/registry/hc.1115,,,
 http://www.clir.org/hiddencollections/registry/hc.1144,,,
 http://www.clir.org/hiddencollections/resources,,x,
-http://www.clir.org/initiatives-partnerships,,,
-http://www.clir.org/initiatives-partnerships/anvil-academic-publishing,,,
-http://www.clir.org/initiatives-partnerships/anvil-academic-publishing/anvil-board,,,
-http://www.clir.org/initiatives-partnerships/cios,,,
-http://www.clir.org/initiatives-partnerships/data-curation,,,
-http://www.clir.org/initiatives-partnerships/dlme,,,
-http://www.clir.org/initiatives-partnerships/leadership-through-new-communities,,,
-http://www.clir.org/initiatives-partnerships/leadership-through-new-communities/digccurr-institute-unc,,,
-http://www.clir.org/initiatives-partnerships/leadership-through-new-communities/future-of-the-liberal-arts-college-library-symposium,,,
-http://www.clir.org/initiatives-partnerships/leadership-through-new-communities/previous-activities,,,
-http://www.clir.org/initiatives-partnerships/leading-change-institute,,,
-http://www.clir.org/initiatives-partnerships/ndsr,,,
+http://www.clir.org/initiatives-partnerships,,x,These need menu added
+http://www.clir.org/initiatives-partnerships/anvil-academic-publishing,,x,This twitter account was compromisedÉ
+http://www.clir.org/initiatives-partnerships/anvil-academic-publishing/anvil-board,,x,
+http://www.clir.org/initiatives-partnerships/cios,,x,
+http://www.clir.org/initiatives-partnerships/data-curation,,x,
+http://www.clir.org/initiatives-partnerships/DLME,/initiatives-partnerships/dlme,x,
+http://www.clir.org/initiatives-partnerships/leadership-through-new-communities,,x,
+http://www.clir.org/initiatives-partnerships/leadership-through-new-communities/digccurr-institute-unc,,x,
+http://www.clir.org/initiatives-partnerships/leadership-through-new-communities/future-of-the-liberal-arts-college-library-symposium,,x,
+http://www.clir.org/initiatives-partnerships/leadership-through-new-communities/previous-activities,,x,
+http://www.clir.org/initiatives-partnerships/leading-change-institute,http://leadingchangeinstitute.org,,
+http://www.clir.org/initiatives-partnerships/ndsr,,x,
 http://www.clir.org/initiatives-partnerships/ndsr/CLIRNDSRResidentInterviewQuestions3.pdf,/wp-content/uploads/CLIRNDSRResidentInterviewQuestions3.pdf,x,
 http://www.clir.org/initiatives-partnerships/ndsr/CLIRNDSRSupervisorInterviewQuestions1.pdf,/wp-content/uploads/CLIRNDSRSupervisorInterviewQuestions1.pdf,x,
 http://www.clir.org/privacy.html,/privacy/,x,
-http://www.clir.org/pubs,/publications/,,TODO
-http://www.clir.org/pubs/annual,/publications/annual-reports/,,TODO
+http://www.clir.org/pubs,,x,TODO
+http://www.clir.org/pubs/annual,,,TODO
 http://www.clir.org/pubs/annual/11annrep.pdf,/wp-content/uploads/11annrep.pdf,x,
 http://www.clir.org/pubs/annual/12annrep.pdf,/wp-content/uploads/12annrep.pdf,x,
 http://www.clir.org/pubs/annual/13annreport.pdf,/wp-content/uploads/13annreport.pdf,x,
 http://www.clir.org/pubs/annual/14annreport.pdf,/wp-content/uploads/14annreport.pdf,x,
 http://www.clir.org/pubs/annual/15annreport,/wp-content/uploads/15annreport.pdf,x,
-http://www.clir.org/pubs/annual/previous-annual-reports,,,
+http://www.clir.org/pubs/annual/previous-annual-reports,,x,Uses child pages plugin; may need to manually create this page because of how the sub-pages are organized
 http://www.clir.org/pubs/annual/previous-annual-reports/04annrep.pdf,/wp-content/uploads/04annrep.pdf,x,
 http://www.clir.org/pubs/annual/previous-annual-reports/05annrep.pdf,/wp-content/uploads/05annrep.pdf,x,
 http://www.clir.org/pubs/annual/previous-annual-reports/07annrep.pdf,/wp-content/uploads/06annrep.pdf,x,
