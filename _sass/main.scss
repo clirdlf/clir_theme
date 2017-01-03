@@ -40,7 +40,7 @@ body {
 // TODO: no hover underline for logo-fonts
 
 .clir-color {
-    color: $clir-burgundy;
+    color: #fff;
 }
 
 .clir-font {
@@ -94,6 +94,18 @@ body {
 .home #alchem-home-sections .alchem-home-section-1 {
     font-size: 21px;
     line-height: 30px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+
+    .container {
+        padding: 60px 120px;
+    }
+
+    .container p {
+        border-top: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 60px 0;
+    }
+}
+
+.entry-share a {
+    color: #2c818c;
 }
