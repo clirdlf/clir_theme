@@ -79,6 +79,18 @@ header a:hover {
     transform: translateY(-50%);
 }
 
+.sub-menu .fa.menu-dropdown-icon {
+    height: 20px;
+    transform: translateY(-50%) rotate(-90deg);
+
+    &:before {
+        display: block;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+}
+
 .main-nav > li > .fa.menu-dropdown-icon {
     line-height: 70px;
     padding: 0;
