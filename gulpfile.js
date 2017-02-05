@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var sass = require('gulp-sass');
@@ -9,8 +11,6 @@ var include = require('gulp-include');
 var uglify = require('gulp-uglify');
 var pump = require('pump');
 
-var dev_url = "localhost:8888/wordpress";
-
 /**
  * Browser sync for WP theme
  */
@@ -21,12 +21,13 @@ gulp.task('browser-sync', function() {
         '**/**/*.css',
         './js/*.js'
     ];
+  console.log('proxy' + process.env.DEV_URL);
 
     browserSync.init(files, {
-        // Read here http://www.browsersync.io/docs/options/
-        proxy: dev_url,
-        port: 8888,
-        injectChanges: true
+      // Read here http://www.browsersync.io/docs/options/
+      proxy: process.env.DEV_URL,
+      port: process.env.DEV_PORT,
+      injectChanges: true
     });
 });
 
