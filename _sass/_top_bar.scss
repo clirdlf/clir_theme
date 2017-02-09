@@ -8,6 +8,10 @@ header a:hover {
     text-decoration: none;
 }
 
+header .container {
+    position: static;
+}
+
 .top-bar {
     height: $top-bar-height;
     font-family: 'Open Sans Pro', 'Open Sans', sans-serif;
@@ -60,43 +64,66 @@ header a:hover {
     padding: 6px 20px;
 }
 
-.site-nav > ul > li a {
-    padding-right: 20px;
-    line-height: 20px;
-    padding: 15px;
-}
+@media (min-width:920px) {
 
-.site-nav > ul > li > a, 
-.site-nav > ul > li:first-child > a {
-    padding: 28px 15px 24px 0;
-    line-height: 1;
-}
-
-.fa.menu-dropdown-icon {
-    width: 20px;
-    text-align: left;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.sub-menu .fa.menu-dropdown-icon {
-    height: 20px;
-    transform: translateY(-50%) rotate(-90deg);
-
-    &:before {
-        display: block;
-        height: 100%;
-        width: 100%;
-        text-align: center;
+    .site-nav li {
+        position: static;
     }
-}
-
-.main-nav > li > .fa.menu-dropdown-icon {
-    line-height: 70px;
-    padding: 0;
-    text-align: right;
-}
-
-.top-bar-right ul {
-    margin-bottom: 0;
+    
+    .site-nav li:hover ul.sub-menu-1 {
+        right: 0;
+        width: 100%;
+        max-height: 300px;
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: -1px;
+        padding: 20px;
+    }
+    
+    .site-nav > ul > li {
+        position: static;
+        display: flex;
+        align-items: center;
+    }
+    
+    .site-nav > ul > li .sub-menu a {
+        border: 0;
+        line-height: 1.42857143;
+        padding: 7.5px;
+    }
+    
+    .site-nav li ul.sub-menu-2 {
+        display: block;
+        position: static;
+        padding: 0 0 0 20px;
+        margin-top: -7.5px;
+        width: 100%;
+    }
+    
+    .site-nav li ul.sub-menu-2 a {
+        padding: 0;
+    }
+    
+    .fa.menu-dropdown-icon {
+        width: 20px;
+        text-align: left;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .sub-menu .fa.menu-dropdown-icon {
+        display: none;
+    }
+    
+    .main-nav > li > .fa.menu-dropdown-icon {
+        position: static;
+        padding: 0;
+        text-align: right;
+        order: 2;
+        line-height: .5;
+    }
+    
+    .top-bar-right ul {
+        margin-bottom: 0;
+    }
 }
