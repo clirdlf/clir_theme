@@ -61,16 +61,16 @@ case 'right':
         <nav class="top-bar-menu clir-custom-menu">
           <ul class="list-inline">
             <li class="menu-item menu-item-type-custom menu-item-object-custom">
-              <a href="https://publications.clir.org">
-                <i class="icon-clir-logo-square anchor-color bigger"></i>
+              <a href="https://staging.clir.org">
+                <!-- <i class="icon-clir-logo-square anchor-color bigger"></i> -->
                 <span class="clir-font">CLIR</span>
               </a>
               </li>
               <li class="hidden-xs menu-item menu-item-type-custom menu-item-object-custom">
-                <a href="https://publications.clir.org"><span>Fellowships &amp; Grants</span></a>
+                <a href="https://staging.clir.org/fellowships"><span>Fellowships &amp; Grants</span></a>
               </li>
               <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                <a href="https://publications.clir.org"><span>Publications</span></a>
+                <a href="https://staging.clir.org/pubs"><span>Publications</span></a>
               </li>
               <li class="hidden-xs menu-item menu-item-type-custom menu-item-object-custom">
                 <a href="https://www.clir.org/join">Join</a>
