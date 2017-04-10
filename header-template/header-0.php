@@ -73,10 +73,10 @@ case 'right':
                 <a href="https://staging.clir.org/pubs"><span>Publications</span></a>
               </li>
               <li class="hidden-xs menu-item menu-item-type-custom menu-item-object-custom">
-                <a href="https://www.clir.org/join">Join</a>
+                <a href="https://staging.clir.org/join">Join</a>
               </li>
               <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                 <a href="https://www.clir.org/give">Give
+                 <a class="give" href="https://staging.clir.org/give">Give
                     <i class="fa fa-heart"></i>
                 </a>
               </li>
@@ -95,14 +95,15 @@ case 'right':
             <ul class="dropdown-menu dropdown-menu-right clir-programs-menu" aria-labelled-by="clir-programs" role="menu">
                 <li><a href="https://www.diglib.org/">Digital Library Federation</a></li>
                 <li><a href="http://dlme.clir.org">Digital Library of the Middle East</a></li>
-                <li><a href="#">Digitizing Hidden Special Collections and Archives</a></li>
+                <li><a href="https://www.clir.org/fellowships/hiddencollections">Digitizing Hidden Special Collections and Archives</a></li>
+                <li><a href="https://www.clir.org/recordings-at-risk">Recordings at Risk</a></li>
+                <li><a href="https://www.clir.org/fellowships/mellon">Mellon Fellowships for Dissertation Research</a></li>
                 <li><a href="http://www.leadingchangeinstitute.org">Leading Change Institute</a></li>
-                <li><a href="#">Data Curation (escience institute?)</a></li>
-                <li><a href="#">Postdoctoral Fellowship Program</a></li>
-                <li><a href="#">CIOs in Library Arts Colleges</a></li>
-                <li><a href="#">Rovelstad Scholarship in International Librarianship</a></li>
-                <li><a href="#">Mellon Fellowships for Dissertation Research</a></li>
-                <li><a href="http://coherence.clir.org/">Committee on Coherence at Scale for Higher Education</a></li>
+                <!-- <li><a href="#">Data Curation (escience institute?)</a></li> -->
+                <li><a href="https://www.clir.org/fellowships/postdoc">Postdoctoral Fellowship Program</a></li>
+                <li><a href="https://www.clir.org/initiatives-partnerships/cios">CIOs in Library Arts Colleges</a></li>
+                <li><a href="https://www.clir.org/fellowships/rovelstad">Rovelstad Scholarship in International Librarianship</a></li>
+                <!-- <li><a href="http://coherence.clir.org/">Committee on Coherence at Scale for Higher Education</a></li> -->
               </ul>
             </li>
           </ul>
