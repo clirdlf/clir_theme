@@ -128,7 +128,7 @@
 
       &:hover {
         outline: none !important;
-        background: darken($brand-primary,10%) !important;
+        background: darken($brand-primary, 10%) !important;
         border-color: transparent !important;
         transition: 0.5s;
         box-shadow: 0 5px 7px rgba(0, 0, 0, 0.25);
@@ -275,7 +275,6 @@
 }
 
 #dlf_icon_menu {
-  color: red;
   .home-padding {
     padding: 25px 0 30px;
   }
@@ -293,6 +292,7 @@
       text-align: center;
       color: 0;
       transition: background .4s ease-out;
+      border-radius: 10px;
 
       h4, p {
         color: #fff;
@@ -314,7 +314,13 @@
       }
 
       &:hover {
-        background: #c72c00;
+        // background: #c72c00;
+        background:#00466e !important;
+        outline: none !important;
+        // background: darken($brand-primary, 10%) !important;
+        border-color: transparent !important;
+        transition: 0.5s;
+        box-shadow: 0 5px 7px rgba(0, 0, 0, 0.25);
         text-decoration: none;
       }
     }
