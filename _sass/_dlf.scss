@@ -326,3 +326,28 @@
     }
   }
 }
+
+#social_wrapper {
+  .inline-center-wrapper {
+    text-align: center;
+
+      display: inline-block;
+      text-align: center;
+      padding: 0 10px;
+
+      a {
+        color: #555;
+
+        i {
+          background-color: #ff7e00;
+          font-size: 50px;
+          color: #fff;
+          width: 90px;
+          height: 90px;
+          border-radius: 90px;
+          line-height: 90px;
+          margin-bottom: 10px;
+        }
+      }
+  }
+}
