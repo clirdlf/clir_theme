@@ -86,6 +86,11 @@ body {
     }
 }
 
+.magee-slider .carousel-inner .item {
+  height: $slider_height !important;
+  min-height: $slider_height !important;
+}
+
 .alchem-home-section-0 .magee-section {
     height: $slider_height !important;
     min-height: $slider_height !important;
