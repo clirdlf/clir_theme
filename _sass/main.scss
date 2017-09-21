@@ -51,7 +51,16 @@ body {
 
 .dlf-font {
     font-family: 'Crimson Text', serif;
+    font-size: 24px;
+    padding-top: 4px;
 }
+
+.menu-item {
+  .dlf-font {
+    margin-left: 15px;
+  }
+}
+
 
 .dlf-color {
     color: $dlf-blue;
