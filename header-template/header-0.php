@@ -79,7 +79,7 @@ case 'right':
                 <a href="https://staging.clir.org/join">Join</a>
               </li>
               <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                 <a class="give" href="https://staging.diglib.org/give">Give
+                 <a class="give" href="https://staging.clir.org/give">Give
                     <i class="fa fa-heart"></i>
                 </a>
               </li>
