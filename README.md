@@ -1,5 +1,5 @@
 # CLIR+DLF Child Theme
-![Stories in Ready](https://badge.waffle.io/clirdlf/clir_theme.png?label=ready&title=Ready)](http://waffle.io/clirdlf/clir_theme)
+![Stories in Ready](https://badge.waffle.io/clirdlf/clir_theme.png?label=ready&title=Ready)
 
 This is a Wordpress child theme for CLIR+DLF websites. You will need to
 make sure you have the latest version the
