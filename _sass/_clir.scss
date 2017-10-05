@@ -31,3 +31,19 @@
 .feature-img-box {
   display: none !important;
 }
+
+
+.section-title {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 36px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: none;
+  color: #666;
+
+  &.no-subtitle {
+    padding-bottom: 30px;
+  }
+}
