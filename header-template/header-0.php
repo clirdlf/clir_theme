@@ -53,7 +53,6 @@ case 'right':
 ?>
 <header class="header-style-1 header-wrap <?php echo $overlay; ?> logo-<?php echo $logo_position; ?>">
 <?php //if ($display_top_bar == 'yes'):?>
-  <h1>top bar</h1>
   <?php include_once('menu.inc.php'); ?>
   <?php //endif; ?>
 
