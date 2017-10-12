@@ -1,7 +1,6 @@
 <?php
 
 add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles', 20 );
-add_action( 'wp_enqueue_scripts', 'add' );
 
 // don't use emoji
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
@@ -11,12 +10,9 @@ function enqueue_parent_styles() {
   wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 
   // Include webfont versions of logos (and opensource Albertus)
-  // dev cdn
-  // https://clirdlf.github.io/logo-fonts/style.css.min
+  // Production CDN
   wp_enqueue_style( 'clir-logo-fonts', 'https://rawgit.com/clirdlf/logo-fonts/master/style.min.css');
   wp_enqueue_style( 'clir-fonts', 'https://rawgit.com/clirdlf/logo-fonts/master/clir-font/stylesheet.min.css');
-  // Production CDN
-  //wp_enqueue_style( 'clir-fonts', 'https://cdn.rawgit.com/clirdlf/logo-fonts/master/clir-font/stylesheet.min.css');
 
   // dequeue the font-awesome from the parent theme
   wp_dequeue_style('font-awesome-css');
