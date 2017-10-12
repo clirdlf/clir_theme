@@ -52,67 +52,9 @@ case 'right':
 }
 ?>
 <header class="header-style-1 header-wrap <?php echo $overlay; ?> logo-<?php echo $logo_position; ?>">
-
 <?php if ($display_top_bar == 'yes'):?>
-<?php // TODO: refactor as a template partial?>
-<div class="top-bar">
-  <div class="<?php echo $header_container; ?>">
-      <div class="top-bar-left">
-        <nav class="top-bar-menu clir-custom-menu">
-          <ul class="list-inline">
-            <li class="menu-item menu-item-type-custom menu-item-object-custom">
-              <a href="https://staging.clir.org">
-                <!-- <i class="icon-clir-logo-square anchor-color bigger"></i> -->
-                <span class="clir-font">CLIR</span>
-              </a>
-            </li>
-              <li class="hidden-xs menu-item menu-item-type-custom menu-item-object-custom">
-                <a href="https://staging.clir.org/fellowships"><span>Fellowships &amp; Grants</span></a>
-              </li>
-              <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                <a href="https://staging.diglib.org/"><span>DLF</span></a>
-              </li>
-              <li class="hidden-xs menu-item menu-item-type-custom menu-item-object-custom">
-                <a href="https://staging.clir.org/pubs"><span>Publications</span></a>
-              </li>
-              <li class="hidden-xs menu-item menu-item-type-custom menu-item-object-custom">
-                <a href="https://staging.clir.org/join">Join</a>
-              </li>
-              <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                 <a class="give" href="https://staging.clir.org/give">Give
-                    <i class="fa fa-heart"></i>
-                </a>
-              </li>
-            </ul>
-          </nav>
-<?php // alchem_get_topbar_content( $top_bar_left_content );?>
-      </div>
-      <div class="top-bar-right">
-        <ul class="list-inline hidden-xs">
-          <li class="dropdown high-z">
-            <a href="#" class="dropdown-tottle" data-toggle="dropdown">
-              <i class="icon-clir-logo header-logo-size bigger"></i>
-              CLIR Programs
-              <i class="fa fa-angle-down"></i>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-right clir-programs-menu" aria-labelled-by="clir-programs" role="menu">
-                <li><a href="https://www.diglib.org/">Digital Library Federation</a></li>
-                <li><a href="https://www.diglib.org/forum/">DLF Forum</a></li>
-                <li><a href="http://dlme.clir.org">Digital Library of the Middle East</a></li>
-                <li><a href="https://www.clir.org/fellowships/hiddencollections">Digitizing Hidden Special Collections and Archives</a></li>
-                <li><a href="https://www.clir.org/recordings-at-risk">Recordings at Risk</a></li>
-                <li><a href="https://www.clir.org/fellowships/mellon">Mellon Fellowships for Dissertation Research</a></li>
-                <li><a href="http://www.leadingchangeinstitute.org">Leading Change Institute</a></li>
-                <li><a href="https://www.diglib.org/groups/e-research-network/">DLF eResearch Network</a></li>
-                <li><a href="https://www.clir.org/fellowships/postdoc">Postdoctoral Fellowship Program</a></li>
-              </ul>
-            </li>
-          </ul>
-  <?php //alchem_get_topbar_content( $top_bar_right_content );?>
-      </div>
-  </div>
-  <div class="clear"></div>
-</div><!-- .top_bar -->
+  <h1>top bar</h1>
+  <?php include_once('menu.inc.php'); ?>
   <?php endif; ?>
 
 <?php
