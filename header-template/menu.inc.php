@@ -1,4 +1,3 @@
-<style>.top-bar{display:block;background-color:transparent;}</style>
 <div class="top-bar">
   <div class="<?php echo $header_container; ?>">
       <div class="top-bar-left">
