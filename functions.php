@@ -22,12 +22,3 @@ function enqueue_parent_styles()
   // wp_enqueue_script('clir', get_template_directory_uri() . '/js/scripts.js', array('jquery'), 1.0, true);
   wp_enqueue_script('scripts', get_stylesheet_directory_uri() . '/js/scripts.js', array('jquery'));
 }
-
-register_nav_menus(
-  array(
-		'mellon_menu'  => __( 'Mellon Fellowship', 'clir' ),
-		'postdoc_menu' => __( 'Postdctoral Fellowship', 'clir' ),
-		'dhc_menu'     => __( 'Digitizing Hidden Collections', 'clir' ),
-		'rar_menu'     => __( 'Recordings at Risk', 'clir' ),
-	)
-);
