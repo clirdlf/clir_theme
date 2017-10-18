@@ -17,6 +17,12 @@ p,li {
   line-height: 1.8em;
 }
 
+h2 {
+  &.section-title, &.section-subtitle {
+    text-align: center;
+  }
+}
+
 .scrollToTop {
   background: url("img/bottom-top-arrow.png") no-repeat scroll 13px 12px #ffffff;
   border: 3px solid #f0f1f3;
