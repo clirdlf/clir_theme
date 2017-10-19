@@ -1,7 +1,13 @@
 // highlights on landing page
 #dlf-intro {
+  margin-top: -55px;
 
-  #dlf-products, #dlf_highlight {
+  #dlf_icons {
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
+
+  #dlf-products {
     $brand-gray: #ccc;
     $brand-darker: #444;
     $brand-primary: #0067a1 !default;
