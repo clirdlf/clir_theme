@@ -113,9 +113,14 @@
       padding-top: 0;
     }
 
-    .btn-primary {
+    .btn-primary, .dlf-color {
       background: $brand-primary;
     }
+
+    .btn-primary, .clir-color {
+      background: $clir-burgundy;
+    }
+
 
     .btn {
       text-transform: uppercase;

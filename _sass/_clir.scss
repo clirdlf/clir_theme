@@ -5,6 +5,30 @@
   background: rgba(0,0,0, 0.4);
 }
 
+.btn-clir {
+  color: $clir-burgundy;
+  border-color: $clir-burgundy;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  transition: 0.5s;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-right: 10px;
+  font-size: 11px;
+  font-weight: 400;
+
+  &:hover {
+    transition: all 0.5s;
+    background: $clir-burgundy;
+    color: #fff;
+    border-color: $clir-burgundy;
+  }
+}
+
 #featured_news{
   .related-post {
     width: 100%;
