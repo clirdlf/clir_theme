@@ -4,10 +4,10 @@
   padding-bottom: 50px;
 }
 
-#dlf-intro {
-  margin-top: -55px;
+// #dlf-intro {
+//   margin-top: -55px;
 
-  #dlf-products {
+  #dlf-products, #featured_news {
     $brand-gray: #ccc;
     $brand-darker: #444;
     $brand-primary: #0067a1 !default;
@@ -141,7 +141,7 @@
 
     }
   }
-}
+// }
 
 .top-posts {
   margin-top: -20px;
