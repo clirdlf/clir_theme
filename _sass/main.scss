@@ -28,6 +28,16 @@ h2 {
   padding: 0 0;
 }
 
+// Search override
+.search-form {
+  width: 500px;
+
+  input[type='text'] {
+    background: #fff;
+    font-size: 18px;
+  }
+}
+
 .scrollToTop {
   background: url("img/bottom-top-arrow.png") no-repeat scroll 13px 12px #ffffff;
   border: 3px solid #f0f1f3;
