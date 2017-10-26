@@ -1,5 +1,5 @@
 /*!
- * jQuery Smooth Scroll - v2.1.2 - 2017-01-19
+ * jQuery Smooth Scroll - v2.2.0 - 2017-05-05
  * https://github.com/kswedberg/jquery-smooth-scroll
  * Copyright (c) 2017 Karl Swedberg
  * Licensed MIT
@@ -18,7 +18,7 @@
   }
 }(function($) {
 
-  var version = '2.1.2';
+  var version = '2.2.0';
   var optionOverrides = {};
   var defaults = {
     exclude: [],
@@ -38,6 +38,9 @@
 
     // only use if you want to override default behavior
     scrollTarget: null,
+
+    // automatically focus the target element after scrolling to it
+    autoFocus: false,
 
     // fn(opts) function to be called before scrolling occurs.
     // `this` is the element(s) being scrolled
@@ -125,6 +128,7 @@
   };
 
   var rRelative = /^([\-\+]=)(\d+)/;
+
   $.fn.extend({
     scrollable: function(dir) {
       var scrl = getScrollable.call(this, {dir: dir});
@@ -237,6 +241,21 @@
     return explicit;
   };
 
+  var onAfterScroll = function(opts) {
+    var $tgt = $(opts.scrollTarget);
+
+    if (opts.autoFocus && $tgt.length) {
+      $tgt[0].focus();
+
+      if (!$tgt.is(document.activeElement)) {
+        $tgt.prop({tabIndex: -1});
+        $tgt[0].focus();
+      }
+    }
+
+    opts.afterScroll.call(opts.link, opts);
+  };
+
   $.smoothScroll = function(options, px) {
     if (options === 'options' && typeof px === 'object') {
       return $.extend(optionOverrides, px);
@@ -307,7 +326,7 @@
       duration: speed,
       easing: opts.easing,
       complete: function() {
-        opts.afterScroll.call(opts.link, opts);
+        onAfterScroll(opts);
       }
     };
 
@@ -318,7 +337,7 @@
     if ($scroller.length) {
       $scroller.stop().animate(aniProps, aniOpts);
     } else {
-      opts.afterScroll.call(opts.link, opts);
+      onAfterScroll(opts);
     }
   };
 
@@ -343,7 +362,7 @@
   'use scrict';
 
   $(document).ready(function(){
-    var offset = 200; // pixel offset for header
+    var offset   = 200; // pixel offset for header
     var duration = 500; // animation duration in ms
 
     $('body').append('<a class="scrollToTop" href="#top"></a>');
@@ -361,7 +380,9 @@
 
     $('.scroll-to-top').click(function(){
         event.preventDefault();
-        $('html, body').animate({ scrollTop: duration }, duration);
+        $('html,body').animate({ scrollTop: offset }, duration);
+        console.log('duration', duration);
+
         return false;
     });
 
