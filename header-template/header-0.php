@@ -148,3 +148,5 @@ jQuery('li.menu_column_6 > ul > li').addClass('col-md-2');
 
             <div class="clear"></div>
         </header>
+
+<a class="scrollToTop" href="#top"></a>

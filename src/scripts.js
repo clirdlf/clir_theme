@@ -7,7 +7,7 @@
     var offset   = 200; // pixel offset for header
     var duration = 500; // animation duration in ms
 
-    $('body').append('<a class="scrollToTop" href="#top"></a>');
+    // $('body').append('<a class="scrollToTop" href="#top"></a>');
 
     $('a').smoothScroll({ offset: -75 });
 
