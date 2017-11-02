@@ -4,25 +4,25 @@
   'use scrict';
 
   $(document).ready(function(){
-    var offset = 200; // pixel offset for header
+    var offset   = 125; // pixel offset for header
     var duration = 500; // animation duration in ms
 
-    $('body').append('<a class="scrollToTop" href="#"></a>');
+    // $('body').append('<a class="scrollToTop" href="#top"></a>');
 
-    $('a').smoothScroll({ offset: -75 });
+    $('a').smoothScroll({ offset: offset });
 
     $(window).scroll(function(){
         if($(this).scrollTop() > offset) {
           $('.scrollToTop').css('opacity', 1);
-          $('.scroll-to-top').fadeIn(duration);
+          $('.scrollToTop').fadeIn(duration);
         } else {
-          $('.scroll-to-top').fadeOut(duration);
+          $('.scrollToTop').fadeOut(duration);
         }
     });
 
-    $('.scroll-to-top').click(function(){
+    $('.scrollToTop').click(function(){
         event.preventDefault();
-        $('html, body').animate({ scrollTop: duration }, duration);
+        $('html,body').animate({ scrollTop: offset }, duration);
         return false;
     });
 

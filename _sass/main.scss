@@ -4,12 +4,38 @@
 @import 'vars';
 @import 'top_bar';
 @import 'footer';
+@import 'program_menus';
 
 @import 'clir'; // clir specific customizations
 @import 'dlf'; // dlf specific customizations
 
 body {
     font-family: 'Open Sans Pro', 'Open Sans', sans-serif;
+}
+
+p,li {
+  line-height: 1.8em;
+}
+
+h2 {
+  &.section-title, &.section-subtitle {
+    text-align: center;
+  }
+}
+
+.page-inner {
+  padding-top: 0;
+  padding: 0 0;
+}
+
+// Search override
+.search-form {
+  width: 500px;
+
+  input[type='text'] {
+    background: #fff;
+    font-size: 18px;
+  }
 }
 
 .scrollToTop {
@@ -51,7 +77,16 @@ body {
 
 .dlf-font {
     font-family: 'Crimson Text', serif;
+    font-size: 24px;
+    padding-top: 4px;
 }
+
+.menu-item {
+  .dlf-font {
+    margin-left: 15px;
+  }
+}
+
 
 .dlf-color {
     color: $dlf-blue;
@@ -86,6 +121,11 @@ body {
     }
 }
 
+.magee-slider .carousel-inner .item {
+  height: $slider_height !important;
+  min-height: $slider_height !important;
+}
+
 .alchem-home-section-0 .magee-section {
     height: $slider_height !important;
     min-height: $slider_height !important;
@@ -96,16 +136,28 @@ body {
     line-height: 30px;
 
     .container {
-        padding: 60px 120px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     .container p {
         border-top: 1px solid #e5e5e5;
         border-bottom: 1px solid #e5e5e5;
-        padding: 60px 0;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .row > div {
+        float: none;
+        margin: auto;
     }
 }
 
 .entry-share a {
     color: #2c818c;
+}
+
+.report-cover {
+  // todo; fix for smaler devices
+  min-height: 300px;
 }
