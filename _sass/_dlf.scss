@@ -121,6 +121,15 @@
       background: $clir-burgundy;
     }
 
+    .btn-dlf {
+      &:hover {
+        outline: none !important;
+        background: darken($brand-primary, 10%) !important;
+        border-color: transparent !important;
+        transition: 0.5s;
+        box-shadow: 0 5px 7px rgba(0, 0, 0, 0.25);
+      }
+    }
 
     .btn {
       text-transform: uppercase;
@@ -135,15 +144,6 @@
       margin-right: 10px;
       font-size: 11px;
       font-weight: 400;
-
-      &:hover {
-        outline: none !important;
-        background: darken($brand-primary, 10%) !important;
-        border-color: transparent !important;
-        transition: 0.5s;
-        box-shadow: 0 5px 7px rgba(0, 0, 0, 0.25);
-      }
-
     }
   }
 // }
