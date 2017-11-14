@@ -20,7 +20,7 @@
                 <a href="https://staging.clir.org/pubs"><span>Publications</span></a>
               </li>
               <li class="hidden-xs menu-item menu-item-type-custom menu-item-object-custom">
-                <a href="https://staging.clir.org/join">Join</a>
+                <a href="https://staging.clir.org/about/become-a-sponsor-or-member/">Join</a>
               </li>
               <li class="menu-item menu-item-type-custom menu-item-object-custom">
                  <a class="give" href="https://staging.clir.org/give">Give
