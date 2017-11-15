@@ -1,0 +1,18 @@
+// Overrides for the parent Theme
+$timeline-width: 128px;
+
+.timeline-year {
+  width: $timeline-width;
+  height: $timeline-width;
+  line-height: $timeline-width;
+}
+
+@media (min-width: 992px) {
+  .magee-timeline:before {
+    // middle - 1/2 the 10px dot
+		top: ($timeline-width / 2px) - 5px;
+	}
+  .magee-timeline > ul > li:before {
+    top: $timeline-width / 2px;
+  }
+}
