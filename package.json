@@ -28,6 +28,6 @@
     "pump": "^1.0.1"
   },
   "dependencies": {
-    "jquery-smooth-scroll": "^2.0.0"
+    "jquery-smooth-scroll": "^2.2.0"
   }
 }

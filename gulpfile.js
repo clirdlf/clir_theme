@@ -65,10 +65,12 @@ gulp.task('sass', function() {
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {
             cascade: true
         }))
-        .pipe(browserSync.reload({
-            stream: true
-        }))
-        .pipe(gulp.dest('stylesheets'));
+        .pipe(gulp.dest('stylesheets'))
+        .pipe(browserSync.stream({match: '**/*.css'}));
+        // .pipe(browserSync.reload({
+            // stream: true
+        // }))
+        // .pipe(gulp.dest('stylesheets'));
 });
 
 gulp.task('watch', function() {
