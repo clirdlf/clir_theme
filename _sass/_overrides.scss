@@ -16,3 +16,7 @@ $timeline-width: 128px;
     top: $timeline-width / 2px;
   }
 }
+
+.magee-timeline > ul > li::before {
+  top: $timeline-width / 2px;
+}
