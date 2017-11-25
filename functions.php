@@ -27,6 +27,10 @@ function enqueue_parent_styles()
   wp_enqueue_style( 'clir-logo-fonts', 'https://rawgit.com/clirdlf/logo-fonts/master/style.min.css');
   wp_enqueue_style( 'clir-fonts', 'https://rawgit.com/clirdlf/logo-fonts/master/clir-font/stylesheet.min.css');
 
+  // dequeue the font-awesome from the parent theme
+  // wp_dequeue_style('font-awesome-css');
+  // wp_enqueue_style('font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
   // custom scripts - be sure to compile this with Gulp task
   // wp_enqueue_script('clir', get_template_directory_uri() . '/js/scripts.js', array('jquery'), 1.0, true);
   wp_enqueue_script('scripts', get_stylesheet_directory_uri() . '/js/scripts.js', array('jquery'));
