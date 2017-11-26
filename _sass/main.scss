@@ -41,9 +41,13 @@ h2 {
     height: 100%;
   }
 
-  button{
+  button {
     border:0;
     margin-top: 10px;
+
+    span {
+      background-color: #fff;
+    }
   }
 }
 
