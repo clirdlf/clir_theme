@@ -26,7 +26,8 @@
         return false;
     });
 
-    var rss = $('a[href$="http://rss"]').prop('href', '/feed');
+    // Couldn't edit a link, so we're doing this until wel can get it fixed
+    $('a[href$="http://rss"]').prop('href', '/feed');
   });
 
 })(jQuery);
