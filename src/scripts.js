@@ -26,6 +26,7 @@
         return false;
     });
 
+    var rss = $('a[href$="http://rss"]').prop('href', '/feed');
   });
 
 })(jQuery);
