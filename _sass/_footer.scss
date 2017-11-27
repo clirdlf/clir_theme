@@ -34,28 +34,35 @@ footer {
         font-size: 14px;
     }
 
-    .row {
-
-    }
+    $footer-color: #252525;
 
     .footer-widget-area {
-        padding: 60px 0 0;
+        padding: 60px 0 0 0;
 
-        background-color: #2c818c !important;
+        // background-color: #2c818c !important;
+        background-color: $footer-color !important;
         color: #fff;
         .widget-title {
             font-weight: bold;
-            color: #333;
+            // color: #333;
+            color: #fff;
         }
     }
 
     .footer-info-area {
-        background-color: #2c818c !important;
+        // background-color: #2c818c !important;
+        background-color: lighten($footer-color, 20%) !important;
         color: #fff;
-        padding: 0;
+        padding-top: 0;
+
+        a {
+          &:hover {
+            color: #fff;
+          }
+        }
 
         .site-info {
-            border-top: 1px solid rgba(151, 160, 175, 0.2);
+            // border-top: 1px solid rgba(151, 160, 175, 0.2);
             margin-top: 30px;
             padding-top: 20px;
         }

@@ -1,11 +1,13 @@
+<!--Footer-->
 <?php
-     $display_footer_widgets = alchem_option('display_footer_widgets');
-     $footer_columns         = absint(alchem_option('footer_widget_columns'));
-     $copyright_text         = alchem_option('copyright_text');
-     $display_copyright_bar  = alchem_option('display_copyright_bar');
-     $tooltip_position       = alchem_option('footer_social_tooltip_position');
-     $footer_special_effects = alchem_option('footer_special_effects');
-     $footer_class = $footer_special_effects == 'footer_sticky' ? 'fxd-footer' : '';
+ $display_footer_widgets    = alchem_option('display_footer_widgets');
+ $footer_columns            = absint(alchem_option('footer_widget_columns'));
+ $copyright_text            = alchem_option('copyright_text');
+ $display_copyright_bar     = alchem_option('display_copyright_bar');
+ $tooltip_position          = alchem_option('footer_social_tooltip_position');
+ $footer_special_effects    = alchem_option('footer_special_effects');
+ $footer_class =  $footer_special_effects == 'footer_sticky'? 'fxd-footer':'';
+
  ?>
 
  <footer class="<?php echo $footer_class; ?>">
@@ -46,7 +48,7 @@
                         <p class="logo">
                             <a href="https://www.clir.org/">
                                 <i class="icon-clir-logo-square clir-color"></i>
-                                <span class="clir clir-font">CLIR</span>
+                                <span class="clir clir-font clir-color">CLIR</span>
                             </a>
                         </p>
                     <?php //echo do_shortcode($copyright_text); ?>
