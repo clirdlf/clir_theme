@@ -16,3 +16,10 @@ $timeline-width: 128px;
     top: $timeline-width / 2px;
   }
 }
+
+.blog-list-wrap {
+  article {
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+}
