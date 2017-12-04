@@ -19,6 +19,17 @@ p,li {
   line-height: 1.8em;
 }
 
+// https://css-tricks.com/hash-tag-links-padding/
+// fix for hash-tag link padding
+h2::before {
+    display: block;
+    content: " ";
+    margin-top: -285px;
+    height: 285px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
 h2 {
   font-weight: 700;
   font-size: 28px;
