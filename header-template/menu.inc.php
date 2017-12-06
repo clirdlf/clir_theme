@@ -41,7 +41,7 @@
             <ul class="dropdown-menu dropdown-menu-right clir-programs-menu" aria-labelled-by="clir-programs" role="menu">
                 <li><a href="https://www.diglib.org/">Digital Library Federation</a></li>
                 <li><a href="https://www.diglib.org/dlf-events/2018forum/">DLF Forum</a></li>
-                <li><a href="http://dlme.clir.org">Digital Library of the Middle East</a></li>
+                <li><a href="https://dlme.clir.org">Digital Library of the Middle East</a></li>
                 <li><a href="https://www.clir.org/fellowships/hiddencollections">Digitizing Hidden Special Collections and Archives</a></li>
                 <li><a href="https://www.clir.org/recordings-at-risk">Recordings at Risk</a></li>
                 <li><a href="https://www.clir.org/fellowships/mellon">Mellon Fellowships for Dissertation Research</a></li>
