@@ -40,13 +40,13 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-right clir-programs-menu" aria-labelled-by="clir-programs" role="menu">
                 <li><a href="https://www.diglib.org/">Digital Library Federation</a></li>
-                <li><a href="https://www.diglib.org/forum/">DLF Forum</a></li>
+                <li><a href="https://www.diglib.org/dlf-events/2018forum/">DLF Forum</a></li>
                 <li><a href="http://dlme.clir.org">Digital Library of the Middle East</a></li>
                 <li><a href="https://www.clir.org/fellowships/hiddencollections">Digitizing Hidden Special Collections and Archives</a></li>
                 <li><a href="https://www.clir.org/recordings-at-risk">Recordings at Risk</a></li>
                 <li><a href="https://www.clir.org/fellowships/mellon">Mellon Fellowships for Dissertation Research</a></li>
                 <li><a href="http://www.leadingchangeinstitute.org">Leading Change Institute</a></li>
-                <li><a href="https://www.diglib.org/groups/e-research-network/">DLF eResearch Network</a></li>
+                <li><a href="https://www.diglib.org/opportunities/e-research-network/">DLF eResearch Network</a></li>
                 <li><a href="https://www.clir.org/fellowships/postdoc">Postdoctoral Fellowship Program</a></li>
               </ul>
             </li>
