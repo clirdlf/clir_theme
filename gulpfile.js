@@ -11,6 +11,13 @@ var include = require('gulp-include');
 var uglify = require('gulp-uglify');
 var pump = require('pump');
 
+// @see https://gist.github.com/LoyEgor/e9dba0725b3ddbb8d1a68c91ca5452b5
+var imagemin = require('gulp-imagemin');
+var imageminPngquant = require('imagemin-pngquant');
+var imageminZopfli = require('imagemin-zopfli');
+var imageminMozjpeg = require('imagemin-mozjpeg'); //need to run 'brew install libpng'
+var imageminGiflossy = require('imagemin-giflossy');
+
 /**
  * Browser sync for WP theme
  */
@@ -52,6 +59,46 @@ gulp.task('compress', function(cb) {
     );
 });
 
+gulp.task('imagemin', function(){
+  return gulp.src(['stylesheets/**/*.{gif,png,jpg}'])
+        .pipe(imagemin([
+            //png
+            imageminPngquant({
+                speed: 1,
+                quality: 98 //lossy settings
+            }),
+            imageminZopfli({
+                more: true
+            }),
+            //gif
+            // imagemin.gifsicle({
+            //     interlaced: true,
+            //     optimizationLevel: 3
+            // }),
+            //gif very light lossy, use only one of gifsicle or Giflossy
+            imageminGiflossy({
+                optimizationLevel: 3,
+                optimize: 3, //keep-empty: Preserve empty transparent frames
+                lossy: 2
+            }),
+            //svg
+            imagemin.svgo({
+                plugins: [{
+                    removeViewBox: false
+                }]
+            }),
+            //jpg lossless
+            imagemin.jpegtran({
+                progressive: true
+            }),
+            //jpg very light lossy, use vs jpegtran
+            imageminMozjpeg({
+                quality: 90
+            })
+        ]));
+        // .pipe(gulp.dest('lib'));
+});
+
 /**
  * Compile files from _scss into css (for live injecting)
  */
@@ -76,6 +123,7 @@ gulp.task('sass', function() {
 gulp.task('watch', function() {
     gulp.watch('_sass/*.scss', ['sass']);
     gulp.watch('src/*.js', ['scripts', 'compress']);
+    gulp.watch('stylesheets/**/*.{gif,png,jpg}', 'imagemin');
 });
 
 gulp.task('default', ['browser-sync', 'watch']);
