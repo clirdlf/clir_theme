@@ -123,7 +123,7 @@ gulp.task('sass', function() {
 gulp.task('watch', function() {
     gulp.watch('_sass/*.scss', ['sass']);
     gulp.watch('src/*.js', ['scripts', 'compress']);
-    gulp.watch('stylesheets/**/*.{gif,png,jpg}', 'imagemin');
+    gulp.watch('stylesheets/**/*.{gif,png,jpg}', ['imagemin']);
 });
 
 gulp.task('default', ['browser-sync', 'watch']);

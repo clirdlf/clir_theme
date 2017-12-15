@@ -30,7 +30,7 @@
     "imagemin-pngquant": "^5.0.1",
     "imagemin-zopfli": "^5.1.0",
     "node-sass": "^3.10.1",
-    "pump": "^1.0.1"
+    "pump": "^1.0.3"
   },
   "dependencies": {
     "jquery-smooth-scroll": "^2.2.0"
