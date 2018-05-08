@@ -1,4 +1,5 @@
 # CLIR+DLF Child Theme
+[![Build Status](https://travis-ci.org/clirdlf/clir_theme.svg?branch=master)](https://travis-ci.org/clirdlf/clir_theme)
 [![Waffle.io - Issues in progress](https://badge.waffle.io/clirdlf/clir_theme.svg?label=in%20progress&title=In%20Progress)](http://waffle.io/clirdlf/clir_theme)
 
 This is a Wordpress child theme for CLIR+DLF websites. You will need to
