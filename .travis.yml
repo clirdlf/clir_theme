@@ -8,7 +8,6 @@
 # @link http://docs.travis-ci.com/user/migrating-from-legacy/#Why-migrate-to-container-based-infrastructure%3F
 # @link http://docs.travis-ci.com/user/workers/container-based-infrastructure/#Routing-your-build-to-container-based-infrastructure
 sudo: false
-dist: trusty
 
 # Declare project language.
 # @link http://about.travis-ci.org/docs/user/languages/php/
