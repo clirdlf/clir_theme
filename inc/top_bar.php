@@ -1,8 +1,7 @@
 <?php
-
 // Top-bar customization
 
-<?php if( $display_top_bar == 'yes' ):?>
+if( $display_top_bar == 'yes' ):?>
 <div class="top-bar">
 <div class="<?php echo $header_container; ?>">
 <div class="top-bar-left">
