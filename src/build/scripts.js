@@ -362,15 +362,15 @@
   'use scrict';
 
   $(document).ready(function(){
-    var offset   = 125; // pixel offset for header
-    var duration = 500; // animation duration in ms
+    var menu_offset = 125; // pixel offset for header
+    var duration    = 500; // animation duration in ms
 
     // $('body').append('<a class="scrollToTop" href="#top"></a>');
 
-    $('a').smoothScroll({ offset: offset });
+    $('a').smoothScroll({ offset: menu_offset });
 
     $(window).scroll(function(){
-        if($(this).scrollTop() > offset) {
+        if($(this).scrollTop() > menu_offset) {
           $('.scrollToTop').css('opacity', 1);
           $('.scrollToTop').fadeIn(duration);
         } else {
