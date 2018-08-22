@@ -28,7 +28,7 @@
 
     $('.scrollToTop').click(function(){
       event.preventDefault();
-      $('html,body').animate({ scrollTop: offset }, duration);
+      $('html,body').animate({ scrollTop: menu_offset }, duration);
       return false;
     });
 
