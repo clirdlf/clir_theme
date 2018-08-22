@@ -367,21 +367,27 @@
 
     // $('body').append('<a class="scrollToTop" href="#top"></a>');
 
-    $('a').smoothScroll({ offset: menu_offset });
+    $('a').smoothScroll(
+      {
+        offset: menu_offset,
+        easing: 'linear',
+        speed: 'auto'
+      }
+    );
 
     $(window).scroll(function(){
-        if($(this).scrollTop() > menu_offset) {
-          $('.scrollToTop').css('opacity', 1);
-          $('.scrollToTop').fadeIn(duration);
-        } else {
-          $('.scrollToTop').fadeOut(duration);
-        }
+      if($(this).scrollTop() > menu_offset) {
+        $('.scrollToTop').css('opacity', 1);
+        $('.scrollToTop').fadeIn(duration);
+      } else {
+        $('.scrollToTop').fadeOut(duration);
+      }
     });
 
     $('.scrollToTop').click(function(){
-        event.preventDefault();
-        $('html,body').animate({ scrollTop: offset }, duration);
-        return false;
+      event.preventDefault();
+      $('html,body').animate({ scrollTop: offset }, duration);
+      return false;
     });
 
     // Couldn't edit a link, so we're doing this until wel can get it fixed
