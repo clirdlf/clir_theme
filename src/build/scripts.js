@@ -362,7 +362,7 @@
   'use scrict';
 
   $(document).ready(function(){
-    var menu_offset = 30; // pixel offset for header
+    var menu_offset = -20; // pixel offset for header
     var duration    = 400; // animation duration in ms
 
     // $('body').append('<a class="scrollToTop" href="#top"></a>');
