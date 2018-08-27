@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/clirdlf/clir_theme#readme",
   "devDependencies": {
-    "browser-sync": "^2.24.6",
+    "browser-sync": "^2.24.7",
     "dotenv": "^6.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
