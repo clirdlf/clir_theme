@@ -42,7 +42,7 @@
                     <?php if ($display_copyright_bar == 'yes'):?>
                     <div class="site-info">
                         <p class="pull-right">
-                            All content on this site is available for re-use under
+                            Unless otherwise indicated, content on this site is available for re-use under
                             <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0 License</a>
                         </p>
                         <p class="logo">
