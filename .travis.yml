@@ -19,15 +19,9 @@ matrix:
     fast_finish: true
 
     include:
-        # aliased to a recent 7.0.x version
-        - php: '7.0'
+        - php: '7.2'
         # aliased to a recent 7.1.x version
-        - php: '7.1'
-        # aliased to a recent hhvm version
-        - php: 'hhvm'
-
-    allow_failures:
-        - php: 'hhvm'
+        - php: '7.4'
 
 # Declare which versions of WordPress to test against.
 # Also declare whether or not to test in Multisite.
